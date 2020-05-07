@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="Needit_New" max_length="40" name="x_58872_needit_needit_new" type="collection">
+        <element display="true" label="New Desc" mandatory="true" max_length="100" name="new_desc" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="suggestion 1" label="Demo Choice" max_length="40" name="u_choice_1" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Suggestion 1" sequence="0" value="suggestion 1"/>
+                <element inactive_on_update="false" label="Suggestion 2" sequence="1" value="suggestion 2"/>
+                <element inactive_on_update="false" label="Suggestion 3" sequence="2" value="suggestion 3"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="New Reference" max_length="32" name="u_reference_2" reference="sys_user" type="reference"/>
+    </element>
+</database>
